@@ -1,0 +1,191 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Class
+%
+%
+% Authors:
+% Fatih Demirel
+%
+% License:
+% The MIT License
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{multicol}
+\setlength{\columnsep}{0mm}
+%----------------------------------------------------------------------------------------
+\usepackage{lipsum}  
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} 
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	{ \fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{Fatih Demirel}}}} % First name
+	
+	\vspace{6pt}
+	
+	{\Large Computer Engineer} % Career or current job title
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth} % 20% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	%\icon{Globe}{11}{\href{http://www.google.com}{portafolio.com}}\\ 
+    \icon{Phone}{11}{+90 553 331 83 49}\\
+    \icon{MapMarker}{11}{Sivas, Turkey}\\
+	
+\end{minipage}
+\begin{minipage}[t]{0.27\textwidth} % 27% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\icon{Envelope}{11}{\href{mailto:demirel-fth-93@outlook.com}{demirel-fth-93@outlook.com}}\\	
+    \icon{Github}{11}{\href{https://github.com/demirelfth}{github.com/demirelfth}}\\
+    \icon{LinkedinSquare}{11}{\href{https://www.linkedin.com/in/fatih-demirel-ab8429111/}{/in/fatih-demirel-ab8429111/}}\\    
+    
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.46\textwidth}
+    \cvsect{Summary}
+	\vspace{-6pt}
+ 
+    %Dummy text
+	%\lipsum[1][1-5] \\
+        \begin{minipage}[t]{0.83\textwidth}
+          I am a software developer with a bachelor's degree in Computer Engineering. I have experience in various programming languages, including JavaScript, Typescript, Java, Python, C++, and PHP. I've worked on software development projects for different companies.
+        \end{minipage}
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.465\textwidth}
+    \cvsect{Skills}
+    \vspace{-6pt}
+    
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Languages:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      JavaScript, Typescript, Java, Python, C, C++, PHP.
+    \end{minipage}
+    \vspace{4mm}
+    
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Technologies:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      Matlab, SAS Products, LOGO, Node.js, AWS
+    \end{minipage}
+    
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+\cvsect{Projects}
+\begin{entrylist}
+    \entry
+		{Typescript}
+		{Trip Planner}
+		{https://github.com/demirelfth/TripPlanner}
+		{ A trip planner implemented with using Deutsche Bahn's open API. }
+    \entry
+		{Typescript, Java}
+		{Employee Management System}
+		{https://github.com/demirelfth/employee-management-system}
+		{ This project developed backend-side with Spring Boot, frontend-side with Angular. }
+	\entry
+		{Java, Thymeleaf}
+		{Student Management System}
+		{https://github.com/demirelfth/student-management-system}
+		{ Student Management System with Spring Boot and Thymeleaf. }
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Education}
+\begin{entrylist}
+    \entry
+		{09/2013 - 09/2023}
+		{ Computer Engineering }
+		{Istanbul Technical University}
+		{Bachelor's Degree in Computer Engineering}
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Experience}
+\begin{entrylist}
+	\entry
+        {02/2023 -- Present}
+		{Backend Developer}
+		{Nişancı Software}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item { Project of Nişancı Sotware is YEBEA and it is about meal delivery service like "Yemek Sepeti". I am working as backend developer at Nişancı Software. }
+            \item { Implemented YEBEA's backend with javascript and Node.js.}
+        \end{itemize} 
+        \texttt{Node.js} \slashsep \texttt{Javascript} \slashsep \texttt{PostgreSQL}}
+        \entry
+        {03/2023 -- Present}
+		{IT Specialist}
+		{Metfamer AŞ}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item { Worked on LOGO product tables and background information. }
+            \item { Windows Server System with access point, firewall, storage, NAS, VMware researched and learned. }
+            \item { Worked as designer with Adobe Illustrator, Adobe Photoshop, CapCut. }
+        \end{itemize} 
+        \texttt{LOGO} \slashsep \texttt{Windows Server 2022} \slashsep \texttt{T-SQL} \slashsep \texttt{.Net}}
+	\entry
+		{07/2019 -- 10/2021}
+		{Software Engineer}
+		{Sade Yazılım ve Danışmanlık}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item { Implemented interface-FWI (Federation Server Web Interface)- with idea of AWI. However, they have different architectures. }
+            \item { Implemented interface-AWI (Angular Web Interface)- for clients to use SAS Products' abilities without develop any SAS Code. Angular and Bootstrap used for frontend, Nodejs used for interlayer and PostgreSQL used as database. }
+            \item { Worked as Data Management Specialist,therefore researched and learned SAS Code and also SAS products like Dataflux Data Management Server, SAS Federation Server. }
+        \end{itemize} 
+        \texttt{Angular}\slashsep \texttt{Typescript} \slashsep \texttt{Javascript} \slashsep \texttt{Node.js} \slashsep \texttt{SAS Products} \slashsep \texttt{PostgreSQL} \slashsep \texttt{Bootstrap} }
+	\entry
+		{02/2018 -- 11/2018 }
+		{Full-Stack Developer}
+		{Hyplit}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item { Project of Hyplit was about social network like "Wattpad". I worked as full stack developer at Hyplit. }
+            \item { Developed this project with HTML, CSS, Bootstrap, Javascript for frontend and PHP  for backend and MySql as database. }
+        \end{itemize} 
+        \texttt{PHP} \slashsep \texttt{Bootstrap} \slashsep \texttt{MySql}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+	\cvsect{Languages}
+    \vspace{-6pt}
+    
+    \hspace{26mm} \textbf{English} - B2, \textbf{ Turkish} - native
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
